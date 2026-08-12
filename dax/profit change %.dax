@@ -1,0 +1,2 @@
+Profit Change % = 
+DIVIDE( [Profit Change], [Gross Profit], 0 )
