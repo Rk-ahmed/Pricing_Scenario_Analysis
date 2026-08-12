@@ -1,0 +1,5 @@
+Revenue by Category = 
+CALCULATE(
+    [Revenue],
+    ALLEXCEPT( 'Product', 'Product'[Category] )
+)
