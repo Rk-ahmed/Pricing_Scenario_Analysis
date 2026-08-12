@@ -1,0 +1,8 @@
+Scenario Revenue = 
+SUMX(
+    'Fact Sales',
+    'Fact Sales'[Quantity (SFT)]
+        * ( 1 + 'Quantity Change %'[Quantity Change % Value] / 100 )
+        * 'Fact Sales'[Unit Price]
+        * ( 1 + 'Price Change %'[Price Change % Value] / 100 )
+)
