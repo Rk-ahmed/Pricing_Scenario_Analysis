@@ -1,0 +1,2 @@
+Gross Margin % = 
+DIVIDE( [Gross Profit], [Revenue], 0 )
