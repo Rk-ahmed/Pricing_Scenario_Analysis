@@ -117,16 +117,6 @@ This project was built on **simulated data** generated for demonstration purpose
 | Simulated Unit Price / Unit Cost | Actual invoice-level pricing and cost data |
 | Simulated Freight Cost | Actual logistics cost per shipment |
 
-### What becomes possible with real data
-
-```
-💰 Pricing floor per dealer    → know exactly when margin turns Critical
-🚚 Freight contract ceiling    → hard number before logistics negotiations
-🤝 Volume deal evaluation      → price cut vs volume gain, instant profit answer
-📦 Category mix strategy       → which division to push volume in per scenario
-⚠️  Inflation stress test       → board-ready numbers before next price revision
-```
-
 ---
 
 ## 🧠 Business Decisions This Enables
