@@ -100,7 +100,6 @@ SWITCH(
     ├── scenario_total_cost.dax
     ├── scenario_gross_profit.dax
     ├── scenario_gross_margin.dax
-    ├── margin_health.dax
     └── scenario_insight.dax
 ```
 
