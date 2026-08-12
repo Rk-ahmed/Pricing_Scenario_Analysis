@@ -1,0 +1,5 @@
+Gross Profit by Category = 
+CALCULATE(
+    [Gross Profit],
+    ALLEXCEPT( 'Product', 'Product'[Category] )
+)
