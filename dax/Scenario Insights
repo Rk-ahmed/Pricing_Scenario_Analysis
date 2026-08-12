@@ -1,0 +1,30 @@
+Scenario Insight = 
+VAR _RevChg      = [Revenue Change %]
+VAR _ProfChg     = [Profit Change %]
+VAR _MarginChg   = [Margin Change (pp)]
+VAR _ScenMargin  = [Scenario Gross Margin %]
+
+VAR _RevWord   = IF( _RevChg >= 0, "increased", "decreased" )
+VAR _ProfWord  = IF( _ProfChg >= 0, "improved", "declined" )
+VAR _MrgWord   = IF( _MarginChg >= 0, "improved", "deteriorated" )
+
+VAR _Advice =
+    IF( _ScenMargin >= 0.28,
+        "RECOMMENDATION: STRONGLY FAVORABLE — Proceed with confidence.",
+        IF( _ScenMargin >= 0.20,
+            "RECOMMENDATION: ACCEPTABLE — Monitor cost exposure closely.",
+            IF( _ScenMargin >= 0.10,
+                "RECOMMENDATION: CAUTION — Margins are thin. Review pricing.",
+                "RECOMMENDATION: UNFAVORABLE — This scenario erodes profitability."
+            )
+        )
+    )
+
+RETURN
+"Revenue has " & _RevWord & " by "
+    & FORMAT( ABS(_RevChg), "0.0%" ) & ". "
+& "Gross Profit has " & _ProfWord & " by "
+    & FORMAT( ABS(_ProfChg), "0.0%" ) & ". "
+& "Gross Margin has " & _MrgWord & " by "
+    & FORMAT( ABS(_MarginChg)*100, "0.0" ) & " percentage points. "
+& _Advice
