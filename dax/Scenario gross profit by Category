@@ -1,0 +1,5 @@
+Scenario Gross Profit by Category = 
+CALCULATE(
+    [Scenario Gross Profit],
+    ALLEXCEPT( 'Product', 'Product'[Category] )
+)
