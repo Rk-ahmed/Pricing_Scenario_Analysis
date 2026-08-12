@@ -1,0 +1,5 @@
+Revenue = 
+SUMX(
+    'Fact Sales',
+    'Fact Sales'[Quantity (SFT)] * 'Fact Sales'[Unit Price]
+)
