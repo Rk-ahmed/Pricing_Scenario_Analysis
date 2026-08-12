@@ -1,0 +1,2 @@
+Scenario Gross Margin % = 
+DIVIDE( [Scenario Gross Profit], [Scenario Revenue], 0 )
