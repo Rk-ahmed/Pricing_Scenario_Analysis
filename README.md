@@ -11,7 +11,7 @@
 
 ## 🖼️ Dashboard Preview
 
-![Dashboard Screenshot](docs/dashboard_screenshot.png)
+![Dashboard Screenshot](docs/Dashboard_SS.png)
 
 ---
 
